@@ -1,10 +1,21 @@
 package com.example.demo.app.users.restcontroller;
 
+import com.example.demo.app.users.models.User;
+import com.example.demo.app.users.services.UserService;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/users")
 public class UserRestController {
+
+
+    private final UserService userService;
+
+    public UserRestController(UserService userService) {
+        this.userService = userService;
+    }
 
     @GetMapping("/{id}")
     public Integer findById(@PathVariable("id")Integer id){
@@ -13,10 +24,17 @@ public class UserRestController {
 
 
     @PostMapping
-    public String create(@RequestBody String usuario){
-        return usuario;
+    public User create(@RequestBody User user){
+        return userService.create(user);
+    }
+
+    @GetMapping
+    public List<User>findAll() {
+        return userService.findAll();
     }
 }
+
+
 
 
 /* http://localhost:8080/users/
@@ -25,4 +43,16 @@ public class UserRestController {
     "usuario":"hola"
 }
 
+
+
+{
+    "userName":"jhetfield",
+    "eMail":"j.hetfield@utch.edu.mx",
+    "phone":"6144193525"
+}
+
+
+
  */
+
+

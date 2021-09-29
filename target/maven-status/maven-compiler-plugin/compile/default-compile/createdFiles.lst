@@ -1,5 +1,7 @@
 com/example/demo/app/users/restcontroller/UserRestController.class
 com/example/demo/DemoApplication.class
+com/example/demo/app/users/repos/UserRepository.class
 com/example/demo/app/users/models/User.class
+com/example/demo/app/users/services/UserService.class
 com/example/demo/DemoController.class
 com/example/demo/ServletInitializer.class
