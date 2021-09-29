@@ -37,7 +37,7 @@ postman
 sptringboot
 
 
-
+POJO: Plain Old Java Object
 
 es una especificacion de java en como se debe de manejar la base de datos desde java <artifactId>spring-boot-starter-data-jpa</artifactId> jpa: Java Persistence API, nos ayuda a manera la base de datos desde codigo y nos sirve de intermediario
 
