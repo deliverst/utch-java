@@ -52,7 +52,8 @@ postgres=# create database tid71d;
 CREATE DATABASE
 postgres=#
 
-
+Change de password postgress
+ALTER USER deliverst PASSWORD 'Root.1234';
 
 
 
