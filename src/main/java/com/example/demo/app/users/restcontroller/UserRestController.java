@@ -1,5 +1,6 @@
 package com.example.demo.app.users.restcontroller;
 
+import com.example.demo.utils.Router;
 import com.example.demo.app.users.models.User;
 import com.example.demo.app.users.services.UserService;
 import org.springframework.web.bind.annotation.*;
@@ -7,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping(Router.USER)
 public class UserRestController {
 
 

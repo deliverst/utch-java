@@ -49,6 +49,7 @@ Type "help" for help.
 
 ➜  javaDemo git:(dev) ✗ brew services start postgresql
 postgres=# create database tid71d;
+\dt list tables
 CREATE DATABASE
 postgres=#
 
@@ -56,7 +57,9 @@ Change de password postgress
 ALTER USER deliverst PASSWORD 'Root.1234';
 
 
-
+\l #muestra bases de datos
+\c tid71d # conectarse a la base de datos
+\d muestra las tablas
 
 
 
